@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dpv CS32420 Assignment</title>
+    <meta charset="utf-8"/>
+    <!--------------------------- SCRIPTS HERE --------------------->
+    <script type="text/javascript" src="scripts/external/three.min.js"></script>
+    <script type="text/javascript" src="scripts/external/OrbitControls.js"></script>
+    <script type="text/javascript" src="scripts/external/Tween.js"></script>
+
+
+    <!--------------------------- dpv@aber.ac.uk code HERE --------------------->
+    <script type="text/javascript" src="scripts/SetupScene.js"></script>
+    <script type="text/javascript" src="scripts/KeyboardMovement.js"></script>
+    <script type="text/javascript" src="scripts/Lighting.js"></script>
+    <script type="text/javascript" src="scripts/OutdoorAspects.js"></script>
+    <script type="text/javascript" src="scripts/FirstFloorFurniture.js"></script>
+    <script type="text/javascript" src="scripts/SecondFloorFurniture.js"></script>
+    <script type="text/javascript" src="scripts/UserInteraction.js"></script>
+    <script type="text/javascript" src="scripts/ParticleSystem.js"></script>
+
+
+    <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to
+             use the complete page */
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Div which will hold the Output -->
+<div id="container">
+</div>
+
+<!-- Javascript code that runs our Three.js examples -->
+<script type="text/javascript">
+
+    document.getElementById("container").append(renderer.domElement);
+    window.onload = init;
+</script>
+</body>
+</html>
